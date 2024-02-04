@@ -15,3 +15,14 @@ class Animal {
     console.log(`${this.name} is sleeping.`);
   }
 }
+
+// ColdBloodedAnimal class inherits from Animal
+class ColdBloodedAnimal extends Animal {
+  constructor(name, type, backbone) {
+    super(name, type, backbone, false); //  false because cold-blooded animals are not warm-blooded
+  }
+
+  regulateBodyTemperature() {
+    console.log(`${this.name} is regulating its body temperature.`);
+  }
+}
