@@ -49,3 +49,10 @@ function performActivity(animal) {
     animal.regulateBodyTemperature();
   }
 }
+
+// Example Usage:
+const snake = new ColdBloodedAnimal("Slippy", "Snake", true);
+const eagle = new WarmBloodedAnimal("Sunny", "Eagle", true);
+
+performActivity(snake);
+performActivity(eagle);
