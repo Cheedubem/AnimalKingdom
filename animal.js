@@ -16,6 +16,7 @@ class Animal {
   }
 }
 
+// INHERITANCE
 // ColdBloodedAnimal class inherits from Animal
 class ColdBloodedAnimal extends Animal {
   constructor(name, type, backbone) {
@@ -38,6 +39,7 @@ class WarmBloodedAnimal extends Animal {
   }
 }
 
+// POLYMORPHYSIM
 function performActivity(animal) {
   animal.eat();
   animal.sleep();
@@ -50,6 +52,7 @@ function performActivity(animal) {
   }
 }
 
+// ABSTRACTION
 // Example Usage:
 const snake = new ColdBloodedAnimal("Slippy", "Snake", true);
 const eagle = new WarmBloodedAnimal("Sunny", "Eagle", true);
